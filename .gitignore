@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# 로컬 모델 캐시 (런타임에 S3에서 내려받음, GitHub 100MB 제한 초과)
+models/
