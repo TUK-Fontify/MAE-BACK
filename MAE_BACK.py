@@ -90,10 +90,7 @@ from urllib3.util.retry import Retry
 # 1. 기본 설정
 # ============================================================
 
-DEFAULT_MODEL_URL = (
-    "https://fontify-986995923828-ap-northeast-2-an."
-    "s3.ap-northeast-2.amazonaws.com/inference_fp32.pt"
-)
+DEFAULT_MODEL_URL = "https://fontify-986995923828-ap-northeast-2-an.s3.ap-northeast-2.amazonaws.com/inference_fp32.pt"
 DEFAULT_TARGET_CHARS = tuple("가나더려모부쇼야져쵸켜튜프히")
 DEFAULT_ENGLISH_CANDIDATES = tuple(
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -1661,11 +1658,7 @@ if __name__ == "__main__":
     import time
     import traceback
 
-    TEST_FONT_URL = (
-        "https://fontify-986995923828-ap-northeast-2-an."
-        "s3.ap-northeast-2.amazonaws.com/english_only_google_fonts/"
-        "abeezee/ABeeZee-Italic.ttf"
-    )
+    TEST_FONT_URL = "https://fontify-986995923828-ap-northeast-2-an.s3.ap-northeast-2.amazonaws.com/english_only_google_fonts/abeezee/ABeeZee-Italic.ttf"
     OUTPUT_DIR = Path(__file__).resolve().parent / "generated_hangul"
 
     try:
